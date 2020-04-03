@@ -27,7 +27,7 @@ RequestTerminationHandler.VERSION = "2.0.0"
 function RequestTerminationHandler:access(conf)
   local status  = conf.status_code
   local content = conf.body
-
+  
   if content then
     local headers = {
       ["Content-Type"] = conf.content_type

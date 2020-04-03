@@ -22,6 +22,7 @@ return {
           { message = { type = "string" }, },
           { content_type = { type = "string" }, },
           { body = { type = "string" }, },
+          { file = { type = "string" }, },
         },
         custom_validator = function(config)
           if is_present(config.message)
